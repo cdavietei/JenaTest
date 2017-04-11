@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+	mavenCentral()
+}
+
+mainClassName="HelloSemanticWeb"
+
+dependencies {
+
+	// https://mvnrepository.com/artifact/org.apache.jena/jena
+	compile group: 'org.apache.jena', name: 'jena', version: '3.2.0'
+
+	// https://mvnrepository.com/artifact/org.apache.jena/jena-core
+	compile group: 'org.apache.jena', name: 'jena-core', version: '3.2.0'
+
+	// https://mvnrepository.com/artifact/org.apache.jena/jena-arq
+	compile group: 'org.apache.jena', name: 'jena-arq', version: '3.2.0'
+
+	// https://mvnrepository.com/artifact/com.github.ansell.pellet/pellet-jena
+	compile group: 'com.github.ansell.pellet', name: 'pellet-jena', version: '2.3.6-ansell'
+}
