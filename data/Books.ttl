@@ -1,0 +1,55 @@
+@prefix schema: <http://schema.org/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix article: <http://hofstra.edu/#> .
+
+
+article:benefits	schema:name				"Benefits of Computer";
+					schema:author			"John Maur";
+					schema:genre			"Computers";
+					schema:dataPublished	"12/02/1978".
+
+article:eating		schema:name				"Eating Healthier";
+					schema:author			"Dr. Joe Green";
+					schema:genre			"Health";
+					schema:dataPublished	"10/13/1999".
+
+article:sports		schema:name				"Sports in America";
+					schema:author			"Tom Golds";
+					schema:genre			"Sports";
+					schema:dataPublished	"02/09/2004".
+
+article:students	schema:name				"Students Jobs";
+					schema:author			"Harry Parsons";
+					schema:genre			"Commentary";
+					schema:dataPublished	"09/19/2012".
+
+article:golden		schema:name				"The Golden Age of IT";
+					schema:author			"John Maur";
+					schema:genre			"Computers";
+					schema:dataPublished	"12/02/1990".
+
+article:health		schema:name				"Health Foods to Avoid";
+					schema:author			"Dr. Joe Green";
+					schema:genre			"Health";
+					schema:dataPublished	"10/13/2007".
+
+article:boutique	schema:name				"Boutique Languages";
+					schema:author			"D. Allister Rhodes";
+					schema:genre			"Computers";
+					schema:dataPublished	"02/09/2004".
+
+article:big			schema:name				"Big Brother or Government";
+					schema:author			"Tomas Weiss";
+					schema:genre			"Commentary";
+					schema:dataPublished	"03/09/2016".
+
+article:getting		schema:name				"Getting a good Job";
+					schema:author			"Joan Wiley";
+					schema:genre			"Commentary";
+					schema:dataPublished	"07/11/2014".
+
+article:scheduling	schema:name				"Scheduling Jobs in Python";
+					schema:author			"Tony Issacs";
+					schema:genre			"Computers";
+					schema:dataPublished	"01/09/2017".

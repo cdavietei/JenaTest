@@ -3,6 +3,7 @@
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Iterator;
+
 import org.mindswap.pellet.jena.PelletReasonerFactory;
 
 import org.apache.jena.query.Query;
@@ -21,11 +22,11 @@ import org.apache.jena.util.FileManager;
 
 
 public class HelloSemanticWeb {
-    
+
     static String defaultNameSpace = "http://semwebprogramming.org/2009/ont/chp2:#";
-    
+
     private Model _friends = null;
-    
+
     public static void main(String[] args) throws IOException {
 
         HelloSemanticWeb hello = new HelloSemanticWeb();
@@ -41,15 +42,15 @@ public class HelloSemanticWeb {
         // Say Hello to my FOAF Friends
         System.out.println("\nSay Hello to my FOAF Friends");
         hello.myFriends(hello._friends);
-        
+
     }
-    
+
     private void populateFOAFFriends(){
         _friends = ModelFactory.createOntologyModel();
-        InputStream inFoafInstance = FileManager.get().open("data/foaf.ttl");
-        _friends.read(inFoafInstance,defaultNameSpace,"TTL");
+        InputStream inFoafInstance = FileManager.get().open("data/FOAFFriends.rdf");
+        _friends.read(inFoafInstance,defaultNameSpace);
         //inFoafInstance.close();
-        
+
     }
 
     private void mySelf(Model model){
@@ -64,7 +65,7 @@ public class HelloSemanticWeb {
         runQuery(" select DISTINCT ?name where{  people:me foaf:knows ?friend . ?friend foaf:name ?name . } ", model);  //add the query string
 
     }
-    
+
     private void runQuery(String queryRequest, Model model){
 
         StringBuffer queryStr = new StringBuffer();
@@ -97,10 +98,10 @@ public class HelloSemanticWeb {
 		else
                     System.out.println("No Friends found!");
 
-                
+
 	    }
-	    
+
         } finally { qexec.close();}
     }
-    
+
 }

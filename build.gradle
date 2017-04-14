@@ -5,7 +5,7 @@ repositories {
 	mavenCentral()
 }
 
-mainClassName="HelloSemanticWeb"
+mainClassName="JenaTest"
 
 dependencies {
 
@@ -20,4 +20,8 @@ dependencies {
 
 	// https://mvnrepository.com/artifact/com.github.ansell.pellet/pellet-jena
 	compile group: 'com.github.ansell.pellet', name: 'pellet-jena', version: '2.3.6-ansell'
+
+	// https://mvnrepository.com/artifact/org.apache.jena/jena-fuseki
+	compile group: 'org.apache.jena', name: 'jena-fuseki', version: '2.5.0'
+
 }
