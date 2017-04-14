@@ -1,0 +1,27 @@
+Individual: Chihuahua
+  type : http://example.org#SmallBreed
+  type : http://example.org#Breed
+
+Individual: Ryan
+  owns : http://example.org#Daisy
+  name : Ryan Blace
+  type : http://example.org#Human
+  type : http://example.org#Mammal
+
+Individual: Daisy
+  breed : http://example.org#GoldenRetriever
+  registeredName : Morning Daisy Bathed in Sunshine
+  name : Daisy
+  type : http://example.org#Canine
+  type : http://example.org#Mammal
+  name : Morning Daisy Bathed in Sunshine
+
+Individual: Amber
+  breed : http://example.org#GoldenRetriever
+  name : Amber
+  type : http://example.org#Mammal
+
+Individual: GoldenRetriever
+  type : http://example.org#LargeBreed
+  type : http://example.org#Breed
+

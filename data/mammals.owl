@@ -1,0 +1,40 @@
+Individual: Chihuahua
+  type : http://www.w3.org/2002/07/owl#Thing
+  type : http://example.org#Breed
+  type : http://example.org#SmallBreed
+  sameAs : http://example.org#Chihuahua
+
+Individual: Daisy
+  type : http://www.w3.org/2002/07/owl#Thing
+  type : http://example.org#Canine
+  type : http://example.org#PetOfRyan
+  type : http://example.org#Mammal
+  sameAs : http://example.org#Daisy
+  hasOwner : http://example.org#Ryan
+  name : Morning Daisy Bathed in Sunshine
+  name : Daisy
+  breed : http://example.org#GoldenRetriever
+  registeredName : Morning Daisy Bathed in Sunshine
+
+Individual: Ryan
+  type : http://www.w3.org/2002/07/owl#Thing
+  type : http://example.org#Human
+  type : http://example.org#Mammal
+  sameAs : http://example.org#Ryan
+  owns : http://example.org#Daisy
+  name : Ryan Blace
+
+Individual: Amber
+  type : http://www.w3.org/2002/07/owl#Thing
+  type : http://example.org#Canine
+  type : http://example.org#Mammal
+  sameAs : http://example.org#Amber
+  name : Amber
+  breed : http://example.org#GoldenRetriever
+
+Individual: GoldenRetriever
+  type : http://example.org#LargeBreed
+  type : http://www.w3.org/2002/07/owl#Thing
+  type : http://example.org#Breed
+  sameAs : http://example.org#GoldenRetriever
+

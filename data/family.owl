@@ -1,0 +1,63 @@
+Individual: Eve
+  hasChild : http://www.myfamilytree.com/familytree#Matthew
+  isMarriedTo : http://www.myfamilytree.com/familytree#Adam
+  type : http://www.myfamilytree.com/familytree#Person
+  type : http://www.myfamilytree.com/familytree#Parents
+  type : http://www.w3.org/2002/07/owl#Thing
+  sameAs : http://www.myfamilytree.com/familytree#Eve
+  type : http://www.w3.org/2002/07/owl#NamedIndividual
+
+Individual: John
+  hasGender : http://www.myfamilytree.com/familytree#Male
+  hasSibling : http://www.myfamilytree.com/familytree#Matthew
+  hasSister : http://www.myfamilytree.com/familytree#Matthew
+  type : http://www.myfamilytree.com/familytree#Person
+  type : http://www.w3.org/2002/07/owl#Thing
+  sameAs : http://www.myfamilytree.com/familytree#John
+  type : http://www.w3.org/2002/07/owl#NamedIndividual
+
+Individual: Adam
+  hasChild : http://www.myfamilytree.com/familytree#Matthew
+  isMarriedTo : http://www.myfamilytree.com/familytree#Eve
+  type : http://www.myfamilytree.com/familytree#Person
+  type : http://www.myfamilytree.com/familytree#Parents
+  type : http://www.w3.org/2002/07/owl#Thing
+  sameAs : http://www.myfamilytree.com/familytree#Adam
+  type : http://www.w3.org/2002/07/owl#NamedIndividual
+
+Individual: Mary
+  hasGender : http://www.myfamilytree.com/familytree#Female
+  hasSibling : http://www.myfamilytree.com/familytree#Matthew
+  hasBrother : http://www.myfamilytree.com/familytree#Matthew
+  type : http://www.myfamilytree.com/familytree#Person
+  type : http://www.w3.org/2002/07/owl#Thing
+  sameAs : http://www.myfamilytree.com/familytree#Mary
+  type : http://www.w3.org/2002/07/owl#NamedIndividual
+
+Individual: Matthew
+  hasGender : http://www.myfamilytree.com/familytree#Male
+  hasSibling : http://www.myfamilytree.com/familytree#John
+  hasSibling : http://www.myfamilytree.com/familytree#Mary
+  hasBrother : http://www.myfamilytree.com/familytree#John
+  hasSister : http://www.myfamilytree.com/familytree#Mary
+  hasParent : http://www.myfamilytree.com/familytree#Eve
+  hasParent : http://www.myfamilytree.com/familytree#Adam
+  type : http://www.myfamilytree.com/familytree#Person
+  type : http://www.myfamilytree.com/familytree#Son
+  type : http://www.myfamilytree.com/familytree#OffSpring
+  type : http://www.w3.org/2002/07/owl#Thing
+  sameAs : http://www.myfamilytree.com/familytree#Matthew
+  type : http://www.w3.org/2002/07/owl#NamedIndividual
+
+Individual: Female
+  type : http://www.myfamilytree.com/familytree#Gender
+  type : http://www.w3.org/2002/07/owl#Thing
+  sameAs : http://www.myfamilytree.com/familytree#Female
+  type : http://www.w3.org/2002/07/owl#NamedIndividual
+
+Individual: Male
+  type : http://www.myfamilytree.com/familytree#Gender
+  type : http://www.w3.org/2002/07/owl#Thing
+  sameAs : http://www.myfamilytree.com/familytree#Male
+  type : http://www.w3.org/2002/07/owl#NamedIndividual
+

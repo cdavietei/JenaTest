@@ -1,0 +1,45 @@
+Individual: Male
+  type : http://www.myfamilytree.com/familytree#Gender
+  type : http://www.w3.org/2002/07/owl#NamedIndividual
+  type : http://www.w3.org/2000/01/rdf-schema#Resource
+
+Individual: Female
+  type : http://www.myfamilytree.com/familytree#Gender
+  type : http://www.w3.org/2002/07/owl#NamedIndividual
+  type : http://www.w3.org/2000/01/rdf-schema#Resource
+
+Individual: John
+  hasGender : http://www.myfamilytree.com/familytree#Male
+  type : http://www.myfamilytree.com/familytree#Person
+  type : http://www.w3.org/2002/07/owl#NamedIndividual
+  type : http://www.w3.org/2000/01/rdf-schema#Resource
+
+Individual: Mary
+  hasGender : http://www.myfamilytree.com/familytree#Female
+  type : http://www.myfamilytree.com/familytree#Person
+  type : http://www.w3.org/2002/07/owl#NamedIndividual
+  type : http://www.w3.org/2000/01/rdf-schema#Resource
+
+Individual: Eve
+  isMarriedTo : http://www.myfamilytree.com/familytree#Adam
+  type : http://www.myfamilytree.com/familytree#Person
+  type : http://www.w3.org/2002/07/owl#NamedIndividual
+  type : http://www.w3.org/2000/01/rdf-schema#Resource
+
+Individual: Matthew
+  hasSister : http://www.myfamilytree.com/familytree#Mary
+  hasGender : http://www.myfamilytree.com/familytree#Male
+  hasBrother : http://www.myfamilytree.com/familytree#John
+  hasParent : http://www.myfamilytree.com/familytree#Eve
+  hasParent : http://www.myfamilytree.com/familytree#Adam
+  type : http://www.myfamilytree.com/familytree#Person
+  type : http://www.w3.org/2002/07/owl#NamedIndividual
+  hasSibling : http://www.myfamilytree.com/familytree#John
+  hasSibling : http://www.myfamilytree.com/familytree#Mary
+  type : http://www.w3.org/2000/01/rdf-schema#Resource
+
+Individual: Adam
+  type : http://www.myfamilytree.com/familytree#Person
+  type : http://www.w3.org/2002/07/owl#NamedIndividual
+  type : http://www.w3.org/2000/01/rdf-schema#Resource
+
