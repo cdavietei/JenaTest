@@ -12,6 +12,38 @@ import org.apache.jena.util.*;
 
 public class JenaExample {
 
+    protected Model mModel;
+    public static final String DEFAULT_NAME_SPACE = "http://hofstra.edu/#";
+
+    public static void main(String[] args) {
+        JenaExample jena = new JenaExample();
+
+        System.out.println("Populating Model");
+        jena.populateModel("data/Books.ttl");
+
+        System.out.println("Querying Health");
+        jena.selectTopic("Health");
+
+        System.out.println("Querying Health");
+        jena.selectTopic("Computers");
+
+    }
+
+    public void populateModel(String filePath) {
+        mModel = ModelFactory.createOntologyModel();
+        InputStream file = FileManager.get().open(filePath);
+        mModel.read(file,DEFAULT_NAME_SPACE,"TTL");
+    }
+
+    public void selectTopic(String topic) {
+        String query = String.format("SELECT DISTINCT ?title WHERE {" +
+            "?article schema:genre \"%s\" ."+
+            "?article schema:name ?title . }",
+            topic);
+
+        runQuery(query, mModel);
+    }
+
 
     public void runQuery(String queryRequest, Model model){
 

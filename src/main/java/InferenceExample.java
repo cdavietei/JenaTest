@@ -26,18 +26,18 @@ public class InferenceExample
    public static void main(String[] args)
    {
 	   //validate the program arguments
-      if(args.length != 4)
-      {
-         System.err.println("Usage: java InferenceExample "
-            + "<input file> <input format> <output file> "
-            + "<none|rdfs|owl>");
-         return;
-      }
+    //   if(args.length != 4)
+    //   {
+    //      System.err.println("Usage: java InferenceExample "
+    //         + "<input file> <input format> <output file> "
+    //         + "<none|rdfs|owl>");
+    //      return;
+    //   }
 
-      String inputFileName = args[0];
-      String inputFileFormat = args[1];
-      String outputFileName = args[2];
-      String reasoningLevel = args[3];
+      String inputFileName = "data/mammals.ttl";
+      String inputFileFormat = "Turtle";
+      String outputFileName = "data/mammals.owl";
+      String reasoningLevel = "owl";
 
       //create an input stream for the input file
       FileInputStream inputStream = null;
